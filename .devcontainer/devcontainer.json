@@ -1,6 +1,14 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-
+  "name": "Codespace to perform Kubernetes Deep Dive for Developers Labs",
+  "remoteEnv": {
+    "INSTALLATION_TYPE": "labs"
+  },
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "8gb",
+    "storage": "32gb"
+  },
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
