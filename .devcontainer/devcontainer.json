@@ -4,12 +4,7 @@
   "remoteEnv": {
     "INSTALLATION_TYPE": "labs"
   },
-  "hostRequirements": {
-    "cpus": 4,
-    "memory": "8gb",
-    "storage": "32gb"
-  },
-	// Configure tool-specific properties.
+ 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
@@ -20,6 +15,10 @@
 		}
 	},
 	// Hopefully temporary hack to get around problem of Codeium not loading all the time
-        "postCreateCommand": ".devcontainer/postCreate.sh"
-
+     //   "postCreateCommand": ".devcontainer/postCreate.sh"
+	
+    //...
+    "postAttachCommand": "gh codespace ports visibility *:public -c $CODESPACE_NAME"
 }
+
+
