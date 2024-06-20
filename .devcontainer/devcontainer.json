@@ -4,16 +4,7 @@
   "remoteEnv": {
     "INSTALLATION_TYPE": "labs"
   },
- 	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			
-			"extensions": [
-				"Codeium.codeium"
-			]
-		}
-	},
+ 	
 	// Hopefully temporary hack to get around problem of Codeium not loading all the time
      //   "postCreateCommand": ".devcontainer/postCreate.sh"
 	
