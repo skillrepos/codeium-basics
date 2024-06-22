@@ -6,9 +6,6 @@
 		// Configure properties specific to VS Code.
 		"vscode": {
 			
-			"extensions": [
-				"Codeium.codeium"
-			], 
 			"settings": {
 				"remote.autoForwardPortsSource": "output",
 				"remote.autoForwardPorts": false
