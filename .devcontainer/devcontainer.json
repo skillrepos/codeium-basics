@@ -9,7 +9,11 @@
 			"settings": {
 				"remote.autoForwardPortsSource": "output",
 				"remote.autoForwardPorts": false
-			}
+			},
+
+			"extensions": [
+				"Codeium.codeium"
+			]
 		}
 	}
 }
