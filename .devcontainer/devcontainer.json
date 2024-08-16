@@ -7,10 +7,7 @@
 		"vscode": {
 	        "settings": {
 			  "remote.autoForwardPortsSource": "output"
-			},
-			"extensions": [
-				"Codeium.codeium"
-			]
+			}
 		}
 	}
 
