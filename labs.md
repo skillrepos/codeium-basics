@@ -170,10 +170,10 @@ def is_prime(n):
 
 **Purpose: In this lab, we'll see some examples of having Codeium automatically generate testscases for our code**
 
-1. Start out in the *prime.py* file we've been using. Bring up the inline chat interface with *CMD+I* and enter the following directive. Then click on the *Codeium: Submit* button.
+1. Start out in the *prime.py* file we've been using. Position the cursor on a blank line below the existing code. Bring up the inline chat interface with *CMD+I* and enter the following directive. Then click on the *Codeium: Submit* button.
 
 ```
-# create a function to do 5 unit tests of the code
+create a function to do 5 unit tests of the code
 ```
 ![generating tests via comment](./images/codeium-47.png?raw=true "generating tests via comment") 
 
