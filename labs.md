@@ -1,7 +1,7 @@
 # Codeium Basics
 ## Practical Tips and Best Practices
 ## Session labs
-## Revision 2.0 - 06/19/24
+## Revision 2.1 - 08/17/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -149,7 +149,7 @@ def is_prime(n):
 
 ![conversations icon](./images/codeium-43.png?raw=true "conversations icon")    
 
-9. Next, let's generate some doc for this code. Click on the *Generate Docstring* link in the Codelens section.
+9. Next, let's generate some doc for this code. Click on the *Generate Docstring* link in the Codelens section. (If you don't see a *Generate Docstring* link, you can just click on the *Refactor* menu item and type in "Generate Docstring".)
 
 ![generate docstring](./images/codeium-44.png?raw=true "generate docstring")    
 
