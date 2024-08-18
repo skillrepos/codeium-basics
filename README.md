@@ -1,14 +1,17 @@
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/codeium-basics?quickstart=1)
-
 # Codeium Basics - lab setup
 
-These instructions will guide you through configuring a GitHub Codespaces environment that you can use to run the course labs. 
+These instructions will guide you through configuring a GitHub Codespaces environment that you can use to run the course labs. Because of issues with using Codeium directly through a codespace though, we will need to use VS Code as the front end. 
 If you prefer and if you know one of the other IDEs supported by Codeium, you can use that. But the instructions will reference the codespace version.
 
 These steps **must** be completed prior to starting the actual labs.
 
-## Step 1. To create your working environment for the labs, create a codespace by clicking on the button below:
+## Step 1. Install VS Code on your system from the link below:
+
+<br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Install VS Code])](https://code.visualstudio.com/download)
+
+## Step 2. To create your working environment for the labs, create a codespace by clicking on the button below:
 
 Click on this button ⬇️
 <br/><br/>
