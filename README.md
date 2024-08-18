@@ -9,7 +9,8 @@ These steps **must** be completed prior to starting the actual labs.
 ## Step 1. Install VS Code on your system from the link below:
 
 <br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Install VS Code])](https://code.visualstudio.com/download)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Install VS Code]
+(https://en.m.wikipedia.org/wiki/File:Visual_Studio_Code_1.35_icon.svg)](https://code.visualstudio.com/download)
 
 ## Step 2. To create your working environment for the labs, create a codespace by clicking on the button below:
 
