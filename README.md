@@ -6,7 +6,7 @@ If you prefer and if you know one of the other IDEs supported by Codeium, you ca
 
 These steps **must** be completed prior to starting the actual labs.
 
-## Step 1. Install VS Code on your system from the link below:
+## Step 1. Install VS Code on your system from [this link](https://code.visualstudio.com/download) or by clicking on the icon below:
 
 <br/><br/>
 
@@ -16,7 +16,7 @@ These steps **must** be completed prior to starting the actual labs.
 
 Click on this button ⬇️
 <br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/codeium-basics?quickstart=1)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/codeium-basics?editor=vscode)
 
 <br/><br/>
 Then click on the option to create a new codespace.
@@ -24,6 +24,8 @@ Then click on the option to create a new codespace.
 ![Creating new codespace from button](./images/helmfun20.png?raw=true "Creating new codespace from button")
 
 **This will run for several minutes while it gets everything ready.**
+
+## Step 3. Once the codespace is running
   
 ![Starting codespace](./images/codeium-03.png?raw=true "Starting your codespace")
 
