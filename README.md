@@ -12,7 +12,7 @@ These steps **must** be completed prior to starting the actual labs.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Install VS Code]
 (https://github.com/skillrepos/codeium-basics/images/vscode.svg)](https://code.visualstudio.com/download)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Open in GitHub Codespaces](https://github.com/skillrepos/codeium-basics/blob/main/images/vscode.svg)](https://codespaces.new/skillrepos/codeium-basics?quickstart=1)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Install VS Code](https://github.com/skillrepos/codeium-basics/blob/main/images/vscode.svg)](https://code.visualstudio.com/download)
 
 ## Step 2. To create your working environment for the labs, create a codespace by clicking on the button below:
 
