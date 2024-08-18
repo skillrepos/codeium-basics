@@ -9,8 +9,6 @@ These steps **must** be completed prior to starting the actual labs.
 ## Step 1. Install VS Code on your system from the link below:
 
 <br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Install VS Code]
-(https://github.com/skillrepos/codeium-basics/images/vscode.svg)](https://code.visualstudio.com/download)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Install VS Code](https://github.com/skillrepos/codeium-basics/blob/main/images/vscode.svg)](https://code.visualstudio.com/download)
 
