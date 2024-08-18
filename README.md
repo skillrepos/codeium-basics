@@ -6,81 +6,73 @@ If you prefer and if you know one of the other IDEs supported by Codeium, you ca
 
 These steps **must** be completed prior to starting the actual labs.
 
-## Step 1. Install VS Code on your system from [this link](https://code.visualstudio.com/download) or by clicking on the icon below:
+## Step 1. Get a free Codeium account at [https://codeium.com/account/register](https://codeium.com/account/register).
+
+Fill out the signup form.
+
+![Creating new Codeium account](./images/cb12.png?raw=true "Creating new Codeium account")
+
+Fill out the name form.
+
+![Creating new Codeium account](./images/cb13.png?raw=true "Creating new Codeium account")
+
+## Step 2. Install VS Code on your system from [this link](https://code.visualstudio.com/download) or by clicking on the icon below:
 
 <br/><br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Install VS Code](https://github.com/skillrepos/codeium-basics/blob/main/images/vscode.svg)](https://code.visualstudio.com/download)
 
-## Step 2. To create your working environment for the labs, create a codespace by clicking on the button below:
+## Step 3. To create your working environment for the labs, create a codespace by clicking on the button below:
 
 Click on this button ⬇️
 <br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/codeium-basics?quickstart=1)
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](vscode://github.codespaces/skillrepos/codeium-basics?quickstart=1)
-
-
 <br/><br/>
 Then click on the option to create a new codespace.
 
-![Creating new codespace from button](./images/helmfun20.png?raw=true "Creating new codespace from button")
+![Creating new codespace from button](./images/cb01.png?raw=true "Creating new codespace from button")
 
 **This will run for several minutes while it gets everything ready.**
 
-## Step 3. Once the codespace is running
+## Step 4. Once the codespace is running, go to [https://github.com/codespaces](https://github.com/codespaces), find your codespace in the list, click on the "..." at the end of the row and then click on "Open in Visual Studio Code".
   
-![Starting codespace](./images/codeium-03.png?raw=true "Starting your codespace")
+![Opening codespace in VS Code](./images/cb02.png?raw=true "Opening codespace in VS Code")
 
-This will take a while to run.
+## Step 5. In the browser pop-up, click on "Open Link" to allow the action. This will cause VS Code to open (if it isn't) and prompt you to allow opening the codespace in VS Code. In that one, just click "Open".
 
-## Step 2. Install the Codeium extension
+![Allow action in browser](./images/cb03.png?raw=true "Allow action in browser")
+![Opening codespace in VS Code](./images/cb04.png?raw=true "Opening codespace in VS Code")
 
-See the figure below for numbered steps. 
-(1) Click on the *Extensions* icon in the activity bar.
-(2) Search for *codeium* in the search field.
-(3) You can click on the item in the list to open up the larger page for the extension. Then click on *Install* to install the extension.
+## Step 6. In VS Code, click to "Allow" the extension to sign in to GitHub. Then, if prompted, in the browser select the user to authorize GitHub for VS Code. Then sign-in/authorize GitHub for VS Code by clicking the "Authorize" button and click to "Open" (go back to) VS Code.
 
-![Install Codeium extension](./images/codeium-11.png?raw=true "Install Codeium extension")
+![Allow GitHub signin](./images/cb05.png?raw=true "Allow GitHub signin")
+![Select user](./images/cb06.png?raw=true "Select user")
+![Authorize](./images/cb07.png?raw=true "Authorize")
+![Open app](./images/cb08.png?raw=true "Open app")
 
+## Step 7. Back in VS Code, click on the "Login" button for logging into Codeium. (If you don't see a dialog with the button, click on the brown "Codeium: Login" item in the bottom bar.) Then click to "Allow" the extension to sign in, and click to "Open" the Codeium website.
 
-## Step 3. Follow the dialogs to sign in/sign up for Codeium.
+![Codeium login](./images/cb09.png?raw=true "Codeium login")
+![Allow sign in](./images/cb10.png?raw=true "Allow sign in")
+![Open website](./images/cb11.png?raw=true "Open website")
 
-You may be prompted to allow sigining in. Click on the *Allow* button in the first dialog and then the *Open* button in the second dialog.
+## Step 8. In the Codeium website, if prompted to "Open Visual Studio Code.app", just click the button for that. 
 
-![Authorizing...](./images/codeium-04.png?raw=true "Authorizing...")
-![Authorizing...](./images/codeium-05.png?raw=true "Authorizing...")
+![Open app](./images/cb15.png?raw=true "Open app")
 
-Complete the forms to sign up/sign in to use Codeium.
+## Step 9. If prompted to provide an authentication token, copy the token and then follow the instructions on the screen. (You may not be prompted to do this.)
 
-![Authorizing...](./images/codeium-06.png?raw=true "Authorizing...")
+![Provide token](./images/cb14.png?raw=true "Provide token")
 
-Provide your name if signing up.
+Follow additional instructions on screen to provide token to VS Code.
 
-![Authorizing...](./images/codeium-07.png?raw=true "Authorizing...")
+## Step 10. If prompted again in VS Code to "Open" the URI, just select "Open". 
 
-## Step 4. Copy the authentication token that Codeium provided.
+![Next open](./images/cb16.png?raw=true "Next open")
 
-Hightlight and copy or use the copy icon to capture the authentication token on the screen.
+## Step 11. Finally, at this point, you should be logged into GitHub, Codeium, and have the codespace open in VS Code. 
 
-![Copying the token...](./images/codeium-08.png?raw=true "Copying the token...")
-
-## Step 5. Provide the token to authorize Codeium use in the Codespace.
-
-Switch back to your codespace. Use F1 to bring up the Command Palette. (Ignore any messages about *signin failed*.) In the Command Palette, search for Codeium: Provide Authentication Token. 
-
-![Providing the token...](./images/codeium-09.png?raw=true "Providing the token...")
-
-After you find that, hit *Enter* and then paste in the token.
-
-![Providing the token...](./images/codeium-10.png?raw=true "Providing the token...")
-
-![Labs doc preview in codespace](./images/cpho4.png?raw=true "Labs doc preview in codespace")
-
-This will open it up in a tab above your terminal. Then you can follow along with the steps in the labs. 
-Any command in the gray boxes is either code intended to be run in the console or code to be updated in a file.
-
-Labs doc: [Copilot Hands-on Labs](labs.md)
-
+![Logged into Codeium](./images/cb17.png?raw=true "Logged into Codeium")
 
