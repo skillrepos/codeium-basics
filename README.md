@@ -4,6 +4,15 @@
 These instructions will guide you through configuring a GitHub Codespaces environment that you can use to run the course labs. Because of issues with using Codeium directly through a codespace though, we will need to use VS Code as the front end. 
 If you prefer and if you know one of the other IDEs supported by Codeium, you can use that. But the instructions will reference the codespace version.
 
+There are a lot of steps noted here for guidance. But what it boils down to is:
+
+- Sign up for a free Codeium account
+- Install VS Code if you don't have it
+- Use the button further down in this readme to create a codespace
+- Go to github.com/codespaces, find your new codespace in the list and tell it to open it up in VS Code
+- Click through all the prompts and popups to authorize everything, open your codespace in VS Code, and get signed in to GitHub and Codeium
+
+
 These steps **must** be completed prior to starting the actual labs.
 
 ## Step 1. Get a free Codeium account at [https://codeium.com/account/register](https://codeium.com/account/register).
