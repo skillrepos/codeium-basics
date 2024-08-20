@@ -161,7 +161,7 @@ def is_prime(n):
 
 ![apply docstring](./images/codeium-45.png?raw=true "apply docstring")  
 
-11. Finally, let's have Codeium add some more comments in our code. Click on the *Refactor* link again and this time, select the last item *Verbosely comment this code so that I can understand what's going on. When Codeium finishes the suggestions, you can just *Accept* them. (If there is some part of the proposed change that you don't like, you can just delete those lines.)
+11. Finally, let's have Codeium add some more comments in our code. Click on the *Refactor* link again and this time, select the last item *Verbosely comment this code so that I can understand what's going on.* When Codeium finishes the suggestions, you can just *Accept* them. (If there is some part of the proposed change that you don't like, you can just delete those lines.)
 
 ![add comments](./images/codeium-46.png?raw=true "add comments")  
     
