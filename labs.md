@@ -7,7 +7,8 @@
 
 **NOTE: If you are in VS Code and don't see a terminal, click on *Terminal -> New Terminal* in the menu.
 
-![Open new terminal(./images/cb18.png?raw=true "Open new terminal")
+![Open new terminal](./images/cb18.png?raw=true "Open new terminal")
+
 
 **Lab 1 - Learning how to create good prompts for Codeium**
 
@@ -18,6 +19,7 @@
    ```
    code index.js
    ```
+![Create file](./images/cb19.png?raw=true "Create file")
 
 2. Afterwards this file should be open in a tab in the editor.
 
@@ -39,7 +41,7 @@
 ```
 // function to parse url
 ```
-8. Hit enter and you will probably see a similar line to
+8. Hit enter and you will probably see a similar line to the below. If not, you may need to use the ">" button in the acceptance bar to flip to the next option.
 
 ```
 function parseURL(url) {
@@ -49,14 +51,14 @@ function parseURL(url) {
 
 ![Codeium generated function](./images/codeium-16.png?raw=true "Codeium generated function")    
 
-10. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
+10. Let's do one more pass at getting a specific prompt for Codeium. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
 Type the following in the empty file. (There are no parentheses after the *splitURLandReturnComponents* text.)  Do not hit tab or return yet.
 
 ```
 function splitURLandReturnComponents
 ```
 
-11.  With this function name, Copilot should suggest a full function definition - in fact it may suggest several.  To see the options, hover over the first line and a small window should appear. This window will note how many options there are and provide "<" and ">" links to toggle between them.  Click on the "<" and ">" buttons to see the differences in the available suggestions. Some may be full function suggestions and others may be only partial suggestions.  Choose an alternative you like and then select Tab to accept it.
+11.  With this function name, Codeium should suggest a full function definition - in fact it may suggest several.  To see the options, hover over the first line and a small window should appear. This window will note how many options there are and provide "<" and ">" links to toggle between them.  Click on the "<" and ">" buttons to see the differences in the available suggestions. Some may be full function suggestions and others may be only partial suggestions.  Choose an alternative you like and then select Tab to accept it.
 
 ![alternative suggestions inline](./images/codeium-17.png?raw=true "alternative suggestions inline")   
 
@@ -121,9 +123,9 @@ def is_prime(n):
 
 ![explain link](./images/codeium-36.png?raw=true "explain link") 
 
-2. The explanation is provided in the Codeium chat window. Notice the context that Codeium used (section *A* in the screenshot) and the full explanation (section *B* in the screenshot).
+2. The explanation is provided in the Codeium chat window. Notice the context that Codeium used (the function *is_prime* next to */explain) and the full explanation in the section below.
 
-![explain link](./images/codeium-37.png?raw=true "explain link") 
+![explain function](./images/cb20.png?raw=true "explain function") 
 
 3. Suppose we want to save this chat for future reference or to easily share.. Click on the 3 vertical dots in the upper right of the *CHAT* tab.
 
@@ -137,7 +139,7 @@ def is_prime(n):
 
 ![view chat file](./images/codeium-40.png?raw=true "view chat file")    
 
-6. We can also use shortcut commands to do these same kind of tasks. In the Codeium Chat interface, enter the text below to see the results. Notice the results may be more in a numbered list order than the free-form text previously used.
+6. We can also use shortcut commands to do these same kind of tasks like *explain*. In the Codeium Chat interface, enter the text below to see the results. Notice the results may be more in a numbered list order than the free-form text previously used.
 ```
 /explain is_prime
 ```
@@ -239,7 +241,7 @@ identify any missing test cases and provide code for them
 code dev.sql
 ```
    
-2. Afterwards this file should be open in a tab in the editor. Assume we want to work with a database or database definition that defines a dataset for students, staff, curriculums, courses, schools of study, locations, and registrations for a university system. Let's see what Copilot would generate without any other context for a query to get all students in a course. Enter the following comment below and press Tab to accept suggestions. 
+2. Afterwards this file should be open in a tab in the editor. Assume we want to work with a database or database definition that defines a dataset for students, staff, curriculums, courses, schools of study, locations, and registrations for a university system. Let's see what Codeium would generate without any other context for a query to get all students in a course. Enter the following comment below and press Tab to accept suggestions. 
 
 ```
 -- define a select statement to get all students enrolled in a course
@@ -256,7 +258,7 @@ click on the *X* next to the file's name in it's tab and select to *Save* it.
 
 ![Reopening the file](./images/codeium-57.png?raw=true "Reopening the file") 
    
-5. Let's see if we get any different results if we provide Copilot additional context. Open the file create-tables.sql in the editor from the GitHub repository. (You can either select and open it from the file list or use the command below from the terminal.) Scroll through it and take a quick look at the contents.
+5. Let's see if we get any different results if we provide Codeium additional context. Open the file create-tables.sql in the editor from the GitHub repository. (You can either select and open it from the file list or use the command below from the terminal.) Scroll through it and take a quick look at the contents.
 
 ```
 code create-tables.sql
@@ -264,7 +266,7 @@ code create-tables.sql
 
 6. Now with that file open, go back up to the top of the dev.sql file.  Highlight and delete the comment and resulting query from step 2.
   
-7. Enter the same comment as before to request the query. (Basically, repeat step 2.) See what Copilot suggests this time. You can accept the suggestions or cycle through options. 
+7. Enter the same comment as before to request the query. (Basically, repeat step 2.) See what Codeium suggests this time. You can accept the suggestions or cycle through options. 
 
 ```
 -- define a select statement to get all students enrolled in a course
@@ -275,14 +277,14 @@ code create-tables.sql
 ![New query](./images/codeium-58.png?raw=true "New query") 
 
    
-9. In some cases, we might be able to use a separate index to speed up operations.  Let's ask Copilot to create a new index based on the last query. Add the following line after the current query in the file *dev.sql*.
+9. In some cases, we might be able to use a separate index to speed up operations.  Let's ask Codeium to create a new index based on the last query. Add the following line after the current query in the file *dev.sql*.
 
 ```
 -- write an index to improve the performance of the query
 ```
 ![index](./images/codeium-59.png?raw=true "index") 
 
-10. Let's suppose we also want to have a table to capture student attendance. We can ask Copilot to create the table definition for us.
+10. Let's suppose we also want to have a table to capture student attendance. We can ask Codeium to create the table definition for us.
 
 ```
 -- define a table for student attendance to capture attendance by class
@@ -304,7 +306,7 @@ define a stored procedure to get course enrollment by location
 select * from courses.registration where year(registration_date) = 2023 and month(registration_date) = 9
 ```
 
-13. Ask Copilot to optimize the previous query. You can do this via highlighting the query, using the **CMD+I** shortcut and entering "/optimize" in the dialog. 
+13. Ask Codeium to optimize the previous query. You can do this via highlighting the query, using the **CMD+I** shortcut and entering "/optimize" in the dialog. 
 ```
 /optimize
 ```
@@ -318,9 +320,9 @@ select * from courses.registration where year(registration_date) = 2023 and mont
 **[END OF LAB]**
 </p>
 
-**Lab 6 - Teaching Copilot about updates**
+**Lab 6 - Teaching Codeium about updates**
 
-**Purpose: In this lab, we’ll see an example of what to do when Copilot does not have the most up-to-date information**
+**Purpose: In this lab, we’ll see an example of what to do when Codeium does not have the most up-to-date information**
 
 1. Create a new file called *explore.go* via the same approach as you used to create other files.
 
@@ -329,24 +331,24 @@ select * from courses.registration where year(registration_date) = 2023 and mont
 ```
 write a function to seed a random number generator
 ```
-![Asking Copilot to write function to seed a random number generator](./images/codeium-65.png?raw=true "Asking Copilot to write function to seed a random number generator") 
+![Asking Codeium to write function to seed a random number generator](./images/codeium-65.png?raw=true "Asking Codeium to write function to seed a random number generator") 
 
 3. Codeium has probably generated code using the rand.Seed function. The challenge is that as of Go 1.20, the Seed function is deprecated.  Ref: https://cs.opensource.google/go/go/+/refs/tags/go1.21.0:src/math/rand/rand.go;l=394
 
-![Codeium-generated seed function](./images/codeium-67.png?raw=true "Codeium-generated seed function") 
+![codeium-generated seed function](./images/codeium-67.png?raw=true "codeium-generated seed function") 
 
-4. Let's see if Copilot understands that this is deprecrated. We'll ask it via a query in the main Chat interface. Switch to the Codeium Chat interface and enter the following prompt.
+4. Let's see if Codeium understands that this is deprecrated. We'll ask it via a query in the main Chat interface. Switch to the Codeium Chat interface and enter the following prompt.
 
 ```
 Is the Seed function deprecated in Go?
 ```
 You will likely see a response in the Chat interface saying that it's not deprecated.
 
-![Codeium-generated seed function](./images/codeium-69.png?raw=true "Codeium-generated seed function") 
+![codeium-generated seed function](./images/codeium-69.png?raw=true "codeium-generated seed function") 
 
-5. So one way we can help Copilot understand language updates is by providing updated context in our file. So let's start again. Delete the current content in the explore.go file.
+5. So one way we can help Codeium understand language updates is by providing updated context in our file. So let's start again. Delete the current content in the explore.go file.
 
-6. Now,let's provide Copilot some more direct context by copying in updated code examples. After deleting the code block from step 3, copy and paste in the following example of the replacement for the Seed deprecation into your explore.go file.  This is taken from pkg.go.dev/math/rand.
+6. Now,let's provide Codeium some more direct context by copying in updated code examples. After deleting the code block from step 3, copy and paste in the following example of the replacement for the Seed deprecation into your explore.go file.  This is taken from pkg.go.dev/math/rand.
 
 ```
 	// Create and seed the generator.
@@ -360,7 +362,7 @@ You will likely see a response in the Chat interface saying that it's not deprec
 write a function to seed a random number generator
 ```
 
-![Codeium-generated seed function attempt 2](./images/codeium-70.png?raw=true "Codeium-generated seed function attempt 2")
+![codeium-generated seed function attempt 2](./images/codeium-70.png?raw=true "codeium-generated seed function attempt 2")
 
 8. This time, the code should be using the same format and NewSource function as you put in the file in step 6. You can just Accept the change.
 
@@ -380,7 +382,7 @@ write a function to seed a random number generator
 code deployment.yaml
 ```
 
-2. Bring up the Copilot Chat dialog via **CMD+I** and enter in (or copy and paste) the following request and hit the Submit button.
+2. Bring up the Codeium Chat dialog via **CMD+I** and enter in (or copy and paste) the following request and hit the Submit button.
 
 ```
 write spec for deployment in Kubernetes with 2 replicas and image from busybox
@@ -421,7 +423,7 @@ what is the latest Kubernetes version that you know of?
 
 ![deprecated flag](./images/codeium-77.png?raw=true "deprecated flag")
 
-8. Let's have Copilot generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
+8. Let's have Codeium generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
 
 ```
 How do I call the K8s API for scaling a deployment to 5 replicas with Python?
@@ -458,7 +460,7 @@ translate to Go
 code phone.js
 ```
 
-2. Prompt Copilot to create a function with a regular expression to validate a US phone number. You can use the **CMD+I** interface.
+2. Prompt Codeium to create a function with a regular expression to validate a US phone number. You can use the **CMD+I** interface.
 ```
 create a function to validate any global phone number using a regular expression
 ```
@@ -468,15 +470,15 @@ create a function to validate any global phone number using a regular expression
 
 ![Regex function to validate phone #](./images/codeium-82.png?raw=true "regex function to validate phone #")   
 
-3. Now let's see how Copilot can generate some data and mappings for us automatically. Enter the prompt below in the main Chat text entry area.
+3. Now let's see how Codeium can generate some data and mappings for us automatically. Enter the prompt below in the main Chat text entry area.
 ```
 create a mapping of states to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
 ```
-4. After running this, Copilot will generate the start of a list as shown below. Click on the *Insert* tab to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
+4. After running this, Codeium will generate the start of a list as shown below. Click on the *Insert* tab to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
 
 ![Automatic gen of data](./images/codeium-84.png?raw=true "Automatic gen of data") 
 
-5. Notice that the example mapping was only for about half of the states. We want to get the remaining mappings for the other states. Let's craft a prompt to complete the sequence. Enter the following in the main Copilot Chat entry box and then execute it. (You can substitute whatever state abbreviation it ended on for "after MI".)
+5. Notice that the example mapping was only for about half of the states. We want to get the remaining mappings for the other states. Let's craft a prompt to complete the sequence. Enter the following in the main Codeium Chat entry box and then execute it. (You can substitute whatever state abbreviation it ended on for "after MI".)
 
 ```
 create a mapping of the remaining states after MI to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
