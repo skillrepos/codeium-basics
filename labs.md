@@ -5,7 +5,9 @@
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
-**NOTE: To copy and paste in the codespace, you may need to use keyboard commands - CTRL-C and CTRL-V.**
+**NOTE: If you are in VS Code and don't see a terminal, click on *Terminal -> New Terminal* in the menu.
+
+![Open new terminal(./images/cb18.png?raw=true "Open new terminal")
 
 **Lab 1 - Learning how to create good prompts for Codeium**
 
