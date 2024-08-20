@@ -1,7 +1,7 @@
 # Codeium Basics
 ## Practical Tips and Best Practices
 ## Session labs
-## Revision 2.1 - 08/17/24
+## Revision 2.2 - 08/20/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
