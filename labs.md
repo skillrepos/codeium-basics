@@ -254,33 +254,33 @@ code dev.sql
 ![generated query](./images/codeium-55.png?raw=true "generated query") 
     
 
-3. Go ahead and save this file as part of the project.  You can do this from the "3-line" menu under *File->Save*, or just
-click on the *X* next to the file's name in it's tab and select to *Save* it.
-
-![Save sql file](./images/codeium-56.png?raw=true "Save sql file") 
-
-4. If the file is no longer open in the tabs, you can select the "Explorer" icon at the top of the sidebar and select the file in the list to open it back up.
-
-![Reopening the file](./images/codeium-57.png?raw=true "Reopening the file") 
+3. Go ahead and save this file as part of the project.  You can do this from the menu under *File->Save*.
    
-5. Let's see if we get any different results if we provide Codeium additional context. Open the file create-tables.sql in the editor from the GitHub repository. (You can either select and open it from the file list or use the command below from the terminal.) Scroll through it and take a quick look at the contents.
+4. Let's see if we get any different results if we provide Codeium additional context. Open the file create-tables.sql in the editor from the GitHub repository. (You can either select and open it from the file list or use the command below from the terminal.) Scroll through it and take a quick look at the contents.
 
 ```
 code create-tables.sql
 ```
 
-6. Now with that file open, go back up to the top of the dev.sql file.  Highlight and delete the comment and resulting query from step 2.
+5. Now with that file open, go back up to the top of the *dev.sql* file.  Highlight and delete the comment and resulting query from step 2.
   
-7. Enter the same comment as before to request the query. (Basically, repeat step 2.) See what Codeium suggests this time. You can accept the suggestions or cycle through options. 
+6. Enter the same comment as before to request the query. (Basically, repeat step 2.) See what Codeium suggests this time. You can accept the suggestions or cycle through options. 
 
 ```
 -- define a select statement to get all students enrolled in a course
 ```
 
-8. If all goes well, this second pass should generate multiple completion options with many more specific references to the names and identifiers used in *create-tables.sql*. (You may want to cycle through the suggested options to get to the later ones - i.e. 8/8 for example.) Take a look at the query and then compare the names/identifiers used to the ones in the *create-tables.sql* file. This will show that Codeium picks up on context from other files available to it to make better suggestions.
+7. If all goes well, this second pass should generate multiple completion options with many more specific references to the names and identifiers used in *create-tables.sql*. (You may want to cycle through the suggested options to get to the later ones - i.e. 8/8 for example.) Take a look at the query and then compare the names/identifiers used to the ones in the *create-tables.sql* file. This will show that Codeium picks up on context from other files available to it to make better suggestions.
 
 ![New query](./images/codeium-58.png?raw=true "New query") 
 
+8. However, if you don't get a good suggestion from Codeium for the comment, try copying the code from the *create-tables.sql* file and pasting it in below the comment in the *dev.sql* file. Then try the query again. (If there are multiple suggestions, click through them.) After it works, you can remove the duplicate code you copied in.
+
+![Alternate approach](./images/cb24.png?raw=true "Alternate approach") 
+
+Then try the query again. (If there are multiple suggestions, click through them.) After it works, you can remove the duplicate code you copied in. You can tab and enter until the query is done.
+
+![Alternate approach](./images/cb25.png?raw=true "Alternate approach")
    
 9. In some cases, we might be able to use a separate index to speed up operations.  Let's ask Codeium to create a new index based on the last query. Add the following line after the current query in the file *dev.sql*.
 
@@ -289,7 +289,7 @@ code create-tables.sql
 ```
 ![index](./images/codeium-59.png?raw=true "index") 
 
-10. Let's suppose we also want to have a table to capture student attendance. We can ask Codeium to create the table definition for us.
+9. Let's suppose we also want to have a table to capture student attendance. We can ask Codeium to create the table definition for us.
 
 ```
 -- define a table for student attendance to capture attendance by class
@@ -297,7 +297,7 @@ code create-tables.sql
 
 ![status values](./images/codeium-60.png?raw=true "status values") 
 
-11. Codeium can also create stored procedures. Let's ask it to create a new stored procedure for getting a list of enrolled students at a particular location. Let's use the **CMD+I** shortcut. Go to the bottom of the *dev.sql* file, invoke Codeium Chat via the shortcut and then enter the line below in the dialog and then click the *Submit* button. You can choose to **Accept** or **Discard** the result.
+10. Codeium can also create stored procedures. Let's ask it to create a new stored procedure for getting a list of enrolled students at a particular location. Let's use the **CMD+I** shortcut. Go to the bottom of the *dev.sql* file, invoke Codeium Chat via the shortcut and then enter the line below in the dialog and then click the *Submit* button. You can choose to **Accept** or **Discard** the result.
 
 ```
 define a stored procedure to get course enrollment by location
@@ -305,19 +305,18 @@ define a stored procedure to get course enrollment by location
 ![prompt for stored procedure](./images/codeium-61.png?raw=true "prompt for stored procedure") 
 ![results for stored procedure](./images/codeium-62.png?raw=true "results for stored procedure") 
   
-12. Finally, let's see Codeium optimize a query for us. Suppose we want to get all the course registrations for September, 2023.  Enter the following query in the file.
+11. Finally, let's see Codeium optimize a query for us. Suppose we want to get all the course registrations for September, 2023.  Enter the following query in the file.
 
 ```
 select * from courses.registration where year(registration_date) = 2023 and month(registration_date) = 9
 ```
 
-13. Ask Codeium to optimize the previous query. You can do this via highlighting the query, using the **CMD+I** shortcut and entering "/optimize" in the dialog. 
+12. Ask Codeium to optimize the previous query. You can do this via highlighting the query, using the **CMD+I** shortcut and entering "optimize" in the dialog. 
 ```
-/optimize
+optimize
 ```
-![Optimizing a query](./images/codeium-63.png?raw=true "Optimizing a query") 
 
-14. Afterwards, Codeium should generate a suggested optimization. You can *Accept* or *Reject* the result.
+13. Afterwards, Codeium should generate a suggested optimization. You can *Accept* or *Reject* the result.
  
 ![Optimization suggestion](./images/codeium-64.png?raw=true "Optimization suggestion") 
     
