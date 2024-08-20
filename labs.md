@@ -341,18 +341,9 @@ write a function to seed a random number generator
 
 ![codeium-generated seed function](./images/codeium-67.png?raw=true "codeium-generated seed function") 
 
-4. Let's see if Codeium understands that this is deprecrated. We'll ask it via a query in the main Chat interface. Switch to the Codeium Chat interface and enter the following prompt.
+4. So one way we can help Codeium understand language updates is by providing updated context in our file. So let's start again. Delete the current content in the explore.go file.
 
-```
-Is the Seed function deprecated in Go?
-```
-You will likely see a response in the Chat interface saying that it's not deprecated.
-
-![codeium-generated seed function](./images/codeium-69.png?raw=true "codeium-generated seed function") 
-
-5. So one way we can help Codeium understand language updates is by providing updated context in our file. So let's start again. Delete the current content in the explore.go file.
-
-6. Now,let's provide Codeium some more direct context by copying in updated code examples. After deleting the code block from step 3, copy and paste in the following example of the replacement for the Seed deprecation into your explore.go file.  This is taken from pkg.go.dev/math/rand.
+5. Now,let's provide Codeium some more direct context by copying in updated code examples. After deleting the code block from step 3, copy and paste in the following example of the replacement for the Seed deprecation into your explore.go file.  This is taken from pkg.go.dev/math/rand.
 
 ```
 	// Create and seed the generator.
@@ -361,16 +352,25 @@ You will likely see a response in the Chat interface saying that it's not deprec
 	// r := rand.New(rand.NewSource(99))
 ```
 
-7. Now, let's try the creation of the function again. Underneath the comments and code you just pasted, invoke the dialog via **CMD+I** and enter the statement below again.
+6. Now, let's try the creation of the function again. Underneath the comments and code you just pasted, invoke the dialog via **CMD+I** and enter the statement below again.
 ```
 write a function to seed a random number generator
 ```
 
 ![codeium-generated seed function attempt 2](./images/codeium-70.png?raw=true "codeium-generated seed function attempt 2")
 
-8. This time, the code should be using the same format and NewSource function as you put in the file in step 6. You can just Accept the change.
+7. This time, the code should be using the same format and NewSource function as you put in the file in step 6. You can just Accept the change.
 
 ![Updated random number gen code after including updated usage](./images/codeium-71.png?raw=true "Updated random number gen code after including updated usage")
+
+8. You can also ask Codeium via the chat if the function is deprecated. Switch to the Codeium Chat interface and enter the following prompt.
+
+```
+Is the Seed function deprecated in Go?
+```
+You will likely see a response in the Chat interface saying that it's deprecated and also showing the new function to use.
+
+![codeium-generated seed function](./images/cb26.png?raw=true "codeium-generated seed function") 
 
 <p align="center">
 **[END OF LAB]**
