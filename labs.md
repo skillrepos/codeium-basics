@@ -376,7 +376,7 @@ You will likely see a response in the Chat interface saying that it's deprecated
 **[END OF LAB]**
 </p>
 
-**Lab 7 - Kubernetes, YAML generation and the 2021 problem**
+**Lab 7 - Kubernetes, YAML generation and the version problem**
 
 **Purpose: Show YAML generation and out of date content.**
 
@@ -402,32 +402,39 @@ add label type: front-end
 4. Suppose we don't know how to execute this code. Let's ask Codeium. Highlight the generated YAML in the deployment.yaml file.  Then go to the larger Chat interface and ask it. Put the following in the Chat interface. (See parts 1 and 2 in the next screenshot.)
 
 ```
-How do I execute this - short version?
+How do I execute this?
 ```
 
-5. Codeium should respond with something similar to part 3 in the next screenshot. 
-![How to execute deployment](./images/codeium-74.png?raw=true "How to execute deployment")
+5. Codeium should respond with something similar to what's shown in the next screenshot.
+   
+![How to execute deployment](./images/cb27.png?raw=true "How to execute deployment")
 
 
 6. While we're in the Chat interface, let's ask it for the latest K8s version that it knows of. Put the following into the dialog.
 
 ```
-what is the latest Kubernetes version that you know of?
+What is the current version of Kubernetes?
 ```
 
-7. Notice that it identifies the latest version as 1.23. This highlights the out-of-date issue with the LLM.
+7. Codeium will probably respond that it does not know the current version. This is unfortunate since we don't know how out-of-date the generated content may be.
 
-![Answer to latest K8s version](./images/codeium-75.png?raw=true "Answer to latest K8s version")
+![Answer to latest K8s version](./images/cb28.png?raw=true "Answer to latest K8s version")
 
-8. Notice also that Codeium helpfully generated a suggested command to determine what the current Kubernetes version is, along with options to *Copy* or *Insert in Terminal*. Go ahead and select the *Insert in Terminal* option and try to execute the command.
+8. We can at least ask Codeium how to determine the current version of Kubernetes. Enter the following in the Chat interface.
 
-![Answer to latest K8s version](./images/codeium-76.png?raw=true "Answer to latest K8s version")
+```
+How do I determine the current version of Kubernetes?
+```
+  
+9. This will create a suggested command to determine what the current Kubernetes version is, along with options to *Copy* or *Insert in Terminal*. Go ahead and select the *Insert in Terminal* option and try to execute the command.
 
-9. You'll notice that there's an unknown flag error for the *--short** option. This is because that option is deprecated but Codeium wasn't aware of that change. You can run the command without that option to see the current Kubernetes version.
+![Answer to latest K8s version](./images/cb29.png?raw=true "Answer to latest K8s version")
 
-![deprecated flag](./images/codeium-77.png?raw=true "deprecated flag")
+10. If the command included the *--short* option, you'll get an *unknown flag*. This is because that option is deprecated but Codeium wasn't aware of that change. You can run the command without that option to see the current Kubernetes version.
 
-8. Let's have Codeium generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
+![deprecated flag](./images/cb30.png?raw=true "deprecated flag")
+
+11. Next, let's have Codeium generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
 
 ```
 How do I call the K8s API for scaling a deployment to 5 replicas with Python?
@@ -478,19 +485,24 @@ create a function to validate any global phone number using a regular expression
 ```
 create a mapping of states to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
 ```
-4. After running this, Codeium will generate the start of a list as shown below. Click on the *Insert* tab to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
+4. After running this, Codeium will generate the a list as shown below. Click on the *Insert* tab to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
 
 ![Automatic gen of data](./images/codeium-84.png?raw=true "Automatic gen of data") 
 
-5. Notice that the example mapping was only for about half of the states. We want to get the remaining mappings for the other states. Let's craft a prompt to complete the sequence. Enter the following in the main Codeium Chat entry box and then execute it. (You can substitute whatever state abbreviation it ended on for "after MI".)
+5. While this works fine, there may be times we only get partial completions or want to augment the data later. Codeium can handle this use case also. To see this, try the prompt below in Chat and notice the 5 states you get data for.
+```
+create a mapping of 5 states to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
+```
+
+![Automatic gen of data](./images/cb31.png?raw=true "Automatic gen of data")
+
+6 To get the rest of the mappings for the other states, you can try a prompt like the following (note the use of the term "the other states" in it):
 
 ```
-create a mapping of the remaining states after MI to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
+create a mapping of the other states to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
 ```
-
-
-6 From the generated text in the chat, if the results look ok, you can copy the mappings and add them into the code file. 
-![Completing the mappings](./images/codeium-85.png?raw=true "Completing the mappings") 
+k, you can copy the mappings and add them into the code file. 
+![Completing the mappings](./images/cb32.png?raw=true "Completing the mappings") 
    
 
 <p align="center">
