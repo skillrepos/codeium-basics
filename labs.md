@@ -188,7 +188,7 @@ create a function to do 5 unit tests of the code
 3. Bring up the inline chat interface with *CMD+I* and enter the following directive. Then click on the *Codeium: Submit* button.
 
 ```
-# /test
+/test
 ```
 ![generating tests via command](./images/codeium-49.png?raw=true "generating tests via command") 
 
@@ -196,13 +196,18 @@ create a function to do 5 unit tests of the code
 
 ![suggested tests via command](./images/codeium-50.png?raw=true "suggested tests via command") 
 
-5. Let's try a slightly different way of generating tests.  Switch to the Chat interface and enter the following text. When you get the *"@prim"* part typed, Codeium should give you a popup to select the *is_prime()* function as shown in the screenshot below. Choose that and then hit return to issue the query to Codeium.
+5. Let's try a slightly different way of generating tests.  Switch to the Chat interface and enter the following text. When you get the *"@prim"* part typed, Codeium should give you a popup to select from different categories of objects to complete the query.  Choose *Code Context Items* as shown in the screenshot below. 
 ```
- How would you design a comprehensive test suite for the code in @prim
+ How would you design a comprehensive test suite for the code in @
 ```
-![suggested tests via chat](./images/codeium-51.png?raw=true "suggested tests via chat") 
+![suggested tests via chat](./images/cb21.png?raw=true "suggested tests via chat") 
 
-6. After a few moments, Codeium should propose a set of steps for the test suite in the Chat interface, along with example code afterwards.
+6. After selecting the *Code Context Items*, it should provide you an option to choose the *is_prime* function.  Select that and it should complete the query. Then you can hit Enter and generate test from that query.
+
+![suggested tests via chat](./images/cb22.png?raw=true "suggested tests via chat") 
+![suggested tests via chat](./images/cb23.png?raw=true "suggested tests via chat") 
+
+7. After a few moments, Codeium should propose a set of steps for the test suite in the Chat interface, along with example code afterwards.
 
 ![suggested tests via chat](./images/codeium-52.png?raw=true "suggested tests via chat") 
 
