@@ -399,15 +399,15 @@ add label type: front-end
 3. After a few moments, you should see it respond with the code. You can just Accept this.
 ![Kubernetes manifest](./images/codeium-73.png?raw=true "Kubernetes manifest")
 
-4. Suppose we don't know how to execute this code. Let's ask Codeium. Highlight the generated YAML in the deployment.yaml file.  Then go to the larger Chat interface and ask it. Put the following in the Chat interface. (See parts 1 and 2 in the next screenshot.)
+4. Suppose we don't know how to execute this code. Let's ask Codeium. Save the generated YAML as the deployment.yaml file.  Then go to the larger Chat interface and ask it. Put the following in the Chat interface. (See parts 1 and 2 in the next screenshot.)
 
 ```
-How do I execute this?
+How do I run @file:deployment.yaml in Kubernetes?
 ```
 
 5. Codeium should respond with something similar to what's shown in the next screenshot.
    
-![How to execute deployment](./images/cb27.png?raw=true "How to execute deployment")
+![How to run deployment](./images/cb34.png?raw=true "How to run deployment")
 
 
 6. While we're in the Chat interface, let's ask it for the latest K8s version that it knows of. Put the following into the dialog.
@@ -420,7 +420,7 @@ What is the current version of Kubernetes?
 
 ![Answer to latest K8s version](./images/cb28.png?raw=true "Answer to latest K8s version")
 
-8. We can at least ask Codeium how to determine the current version of Kubernetes. Enter the following in the Chat interface.
+8. We can at least ask Codeium how to determine the current version of Kubernetes. (It may have also told us in the output from the last command.) Enter the following in the Chat interface.
 
 ```
 How do I determine the current version of Kubernetes?
@@ -440,12 +440,12 @@ How do I determine the current version of Kubernetes?
 How do I call the K8s API for scaling a deployment to 5 replicas with Python?
 ```
 
-9. Create a new file and then paste the suggested code into the new file via the *Copy* or *Insert* option.
+12. Create a new file and then paste the suggested code into the new file via the *Copy* or *Insert* option.
 
 ![Add code to new file](./images/codeium-78.png?raw=true "Add code to new file")
 
 
-10. Suppose we change our mind and want to convert this code to Go. Click in the new file, and highlight the new code. Then, in the *Refactor* interface tell it to translate to Go.
+13. Suppose we change our mind and want to convert this code to Go. Click in the new file, and highlight the new code. Then, in the *Refactor* interface tell it to translate to Go.
 
 ```
 translate to Go 
@@ -453,7 +453,7 @@ translate to Go
 ![Go translation](./images/codeium-79.png?raw=true "Go translation")
 
 
-11. If you look at the generated differences, you should now have the equivalent Go code available for accepting.
+14. If you look at the generated differences, you should now have the equivalent Go code available for accepting.
 
 ![Go translation](./images/codeium-80.png?raw=true "Go translation")
 
