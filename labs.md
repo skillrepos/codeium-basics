@@ -368,9 +368,9 @@ write a function to seed a random number generator
 ```
 Is the Seed function deprecated in Go?
 ```
-You will likely see a response in the Chat interface saying that it's deprecated and also showing the new function to use.
+The response may indicate that it is not deprecated or that it is, or that it is not, but it is recommended to use another function.
 
-![codeium-generated seed function](./images/cb26.png?raw=true "codeium-generated seed function") 
+![codeium-generated seed function](./images/cb33.png?raw=true "codeium-generated seed function") 
 
 <p align="center">
 **[END OF LAB]**
