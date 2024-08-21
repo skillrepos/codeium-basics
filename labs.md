@@ -483,7 +483,7 @@ create a function to validate any global phone number using a regular expression
 
 3. Now let's see how Codeium can generate some data and mappings for us automatically. Enter the prompt below in the main Chat text entry area.
 ```
-create a mapping of states to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
+create a mapping of all states to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
 ```
 4. After running this, Codeium will generate the a list as shown below. Click on the *Insert* tab to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
 
@@ -501,7 +501,7 @@ create a mapping of 5 states to area codes in JavaScript where the key is the st
 ```
 create a mapping of the other states to area codes in JavaScript where the key is the state abbreviation and the value is an array of area codes of max size 5
 ```
-k, you can copy the mappings and add them into the code file. 
+If the output looks ok, you can copy the mappings and add them into the code file. 
 ![Completing the mappings](./images/cb32.png?raw=true "Completing the mappings") 
    
 
