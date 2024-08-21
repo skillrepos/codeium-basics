@@ -185,14 +185,14 @@ create a function to do 5 unit tests of the code
 
 ![suggested tests via comment](./images/codeium-48.png?raw=true "suggested tests via comment") 
 
-3. Bring up the inline chat interface with *CMD+I* and enter the following directive. Then click on the *Codeium: Submit* button.
+3. Bring up the inline chat interface again (*CMD+I*) and enter the following directive. Then click on the *Codeium: Submit* button.
 
 ```
 /test
 ```
 ![generating tests via command](./images/codeium-49.png?raw=true "generating tests via command") 
 
-4. Similar to the last option, this gives us a set of unit tests, but we may still be able to do better. Go ahead and *Reject* the suggestion.
+4. This may gives us a set of unit tests directly or it may generate a function for testing. But we may still be able to do better. Go ahead and *Reject* the suggestion.
 
 ![suggested tests via command](./images/codeium-50.png?raw=true "suggested tests via command") 
 
